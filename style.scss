@@ -1,0 +1,218 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+//   *{
+//       padding: 0;
+//       margin: 0;
+//   }
+
+// .btn {
+
+// } 
+
+/* =================================================== header */
+
+.header {
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: #131313;
+    color: white;
+    padding: 37px 5.7%;
+
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    .navbar {
+        padding: 0;
+        
+        flex-grow: 3;
+
+        .menu {
+
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+            
+            &__item {
+
+                display: block; 
+                list-style-type: none;
+                
+            }
+        }
+    }
+
+    &__phone {
+        flex-grow: 1;
+        text-align: center;
+
+        @media only screen and (max-width: 1024px) {
+
+            text-align: right;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .btn {
+        display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+
+        font-size: 12px;
+
+        padding: 23px 4.8%;
+
+
+        .navbar {
+            display: none;
+        }
+    }
+}
+
+/* ================================================ end header */
+
+/* ================================================ section1 */
+
+.section1 {
+    display: flex;
+    max-height: 707px;
+    height: 100vh;
+    background: black;
+    color: white;
+
+    .aside-social {
+        width: 5.7%;
+    }
+    .wrapper {
+        width: 100%;
+        background: url("assets/images/section1-background.jpg");
+    
+
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 510px;
+
+            .h1 {
+
+            }
+
+            .advertising {
+
+            }
+
+
+        }
+    }
+}
+
+/* ================================================ end section1 */
+
+/* ================================================ section2 */
+
+.section2 {
+    display: flex;
+    max-height: 848px;
+    height: 100vh;
+    background: black;
+    color: white;
+
+
+    .section2-left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        padding: 118.4px 0 0 0;  // зависит от левой части
+        // justify-content: center;
+
+        .section2__h3 {
+
+        }
+
+        .section2-left__text {
+
+        }
+
+        .section2-left__info {
+            display:flex;
+            flex-wrap: wrap;
+
+            .section2-left__item {
+                display:flex;
+                flex-direction: column;
+                width: 50%;
+            
+                
+
+            }
+        }
+
+
+    }
+
+    .section2-right  {
+
+        flex-basis: 60%;
+
+        .section2-right__examples {
+            display: flex;
+            flex-basis: 80%;
+            padding: 50px 0;
+
+
+            
+            .section2-right__item {
+                // padding: 0 50px;
+            }
+
+        }
+
+        .section2-right__slider {
+            width: 80%;
+
+            .section2-right__img {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* ================================================ end section2 */
+
+
+
+
+
+
+
+
+
+
+.section3 {
+    display: flex;
+    height: 100vh;
+    background: gray;
+}
+
+.section4 {
+    display: flex;
+    height: 100vh;
+    background: yellow;
+}

@@ -1,0 +1,194 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* =================================================== header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #131313;
+  color: white;
+  padding: 37px 5.7%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header .navbar {
+  padding: 0;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.header .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.header .navbar .menu__item {
+  display: block;
+  list-style-type: none;
+}
+
+.header__phone {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__phone {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 12px;
+    padding: 23px 4.8%;
+  }
+  .header .navbar {
+    display: none;
+  }
+}
+
+/* ================================================ end header */
+/* ================================================ section1 */
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 707px;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.section1 .aside-social {
+  width: 5.7%;
+}
+
+.section1 .wrapper {
+  width: 100%;
+  background: url("assets/images/section1-background.jpg");
+}
+
+.section1 .wrapper .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 510px;
+}
+
+/* ================================================ end section1 */
+/* ================================================ section2 */
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 848px;
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.section2 .section2-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 118.4px 0 0 0;
+}
+
+.section2 .section2-left .section2-left__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section2 .section2-left .section2-left__info .section2-left__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.section2 .section2-right {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.section2 .section2-right .section2-right__examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding: 50px 0;
+}
+
+.section2 .section2-right .section2-right__slider {
+  width: 80%;
+}
+
+.section2 .section2-right .section2-right__slider .section2-right__img {
+  width: 100%;
+}
+
+/* ================================================ end section2 */
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: gray;
+}
+
+.section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+/*# sourceMappingURL=style.css.map */
