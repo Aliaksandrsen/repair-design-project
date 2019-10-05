@@ -1,0 +1,75 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    
+	margin:50px auto;
+    background: #131313;
+    color: #ffffff;
+	padding: 8%;
+	font-family: "FuturaDemiC", sans-serif;
+}
+
+.form__h3 {
+    align-self: center;
+    font-size: 2.0rem;
+    max-width: 60%;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.form__ul{
+    display: flex;
+    flex-direction: column;
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+
+.form__li{
+    display: block;
+    width: 100%;
+	padding: 15px  0 0 0;
+	border-bottom:1px solid #DDDDDD;
+	margin: 20px 0;
+}
+
+.form__li_checkbox{
+    border: none;
+}
+
+.form__lable {
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	color: #B9B9B9;
+	font-size: 1.4rem;
+    background: #131313;
+    font-family: "FuturaBookC", sans-serif;
+    
+}
+.form__input{
+	box-sizing: border-box;
+	
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 2.5rem;
+	font-size: 1.6rem;
+    padding: 0;
+    background: #131313;
+    color: #ffffff;
+
+    &::placeholder {
+        color: #ffffff;
+        font-family: "FuturaMediumC", sans-serif;
+    }
+}
+
+.section5_btn{
+    @extend %btn;
+    align-self: flex-end;
+}
