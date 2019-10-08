@@ -13,20 +13,32 @@
 <body>
     <div class="container">
 
+
+
+        <div class="scroll">
+
+            <p class="scroll__text">Scroll down</p>
+            <a class="scroll_link" href="#down">
+                <img class="scroll__image" src="assets/images/down.png" alt="down">
+            </a>
+        </div>
         <!--------------------------------------------------- header -->
 
         <header class="header-footer">
-            <div class="header-footer__logo">IC "Repair Design Project" </div>
+            <div class="header-footer__logo">
+                <h1 class="h1">IC "Repair Design Project"</h1>
+            </div>
             <div class="navbar">
                 <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link_first" href="#">Home</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Measurement</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Reviewers</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
                 </ul>
             </div>
-            <div class="header-footer__phone">+7(928)768-32-39</div>
+            <div class="header-footer__phone"> <a class="header-footer__phone"
+                    href="tel:+79287683239">+7(928)768-32-39</a></div>
             <input class="btn__header" type="button" value="REQUEST CALL">
         </header>
 
@@ -35,12 +47,12 @@
         <section class="section1">
 
             <aside class="aside-social">
-                <p class="aside-social__inst">INSTAGRAM</p>
+                <p class="aside-social__inst"><a class="aside-social__link" href="#">INSTAGRAM</a></p>
             </aside>
             <div class="section1-wrapper">
                 <div class="section1-first">
-                    <h1 class="h1">Turnkey Repair in the<br>city of <span class="h1_other-color">Rostov-on-Don</span>
-                    </h1>
+                    <h2 class="h2">Turnkey Repair in the<br>city of <span class="h1_other-color">Rostov-on-Don</span>
+                    </h2>
                     <p class="advertising">
                         Get ready-made turnkey repairs on time
                         with work time saving up to 45 days and 20% from
@@ -101,7 +113,8 @@
 
             <div class="section2-right">
                 <div class="section2-right__examples">
-                    <div class="section2-right__item"><span class="section2-right__text">Rostov-on-Don, Admiral</span>
+                    <div class="section2-right__item"><span
+                            class="section2-right__text section2-right__text_first">Rostov-on-Don, Admiral</span>
                     </div>
                     <div class="section2-right__item"><span class="section2-right__text">Sochi Thieves</span></div>
                     <div class="section2-right__item"><span class="section2-right__text">Rostov-on-Don Patriotic</span>
@@ -130,8 +143,9 @@
             <div class="section3__wripper">
 
                 <h3 class="section3__h3">online control</h3>
+                <img class="section3__imglogo" src="assets/images/section3_img.svg" alt="imglogo">
                 <div class="section3-video">
-                    <video class="video" src="" poster="" controls>
+                    <video class="video" src="" poster="assets/images/video_placeholder.jpg" controls>
                         Ваш браузер не поддерживает видео!
                     </video>
 
@@ -163,7 +177,7 @@
             <h3 class="section4__h3">TYPES OF REPAIR</h3>
             <img class="section4__imglogo" src="assets/images/section4_img.svg" alt="imglogo">
             <div class="section4-card-wripper">
-                <div class="card">
+                <div class="card section4__card">
                     <img class="card__img" src="assets/images/section4-card1.jpg" alt="card1">
                     <div class="card__text">
                         <p class="card__title">Redecorating</p>
@@ -180,7 +194,7 @@
                     <p class="card__price">from 900 rub / m2</p>
                 </div>
 
-                <div class="card">
+                <div class="card section4__card">
                     <img class="card__img" src="assets/images/section4-card2.jpg" alt="card2">
                     <div class="card__text">
                         <p class="card__title">Overhaul</p>
@@ -198,7 +212,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card section4__card">
                     <img class="card__img" src="assets/images/section4-card3.jpg" alt="card3">
                     <div class="card__text">
                         <p class="card__title">Designer Repair</p>
@@ -224,7 +238,17 @@
         <section class="section5">
 
             <div class="section5-bild-circle">
-
+                <div class="circle-conteiner">
+                    <ul class="section5-list">
+                        <li class="section5-list__item section5-list__item_first">Our specialist will arrive
+                            for measurements per day
+                            contact, or appoint a date convenient for you</li>
+                        <li class="section5-list__item section5-list__item_second">Free metering</li>
+                        <li class="section5-list__item section5-list__item_third">Free consultation</li>
+                        <li class="section5-list__item section5-list__item_fouth">Get a cost estimate and<br>
+                            the timing of your future repairs</li>
+                    </ul>
+                </div>
             </div>
             <div class="section5-right">
 
@@ -261,6 +285,12 @@
                     </ul>
                 </form>
 
+                <div class="section5__save-cost">
+                    <img src="assets/images/pig.svg" alt="pig">
+                    <p class="section5__save-cost-text">Help save 10 - 20% of the
+                        cost of materials</p>
+                </div>
+
             </div>
 
         </section>
@@ -270,6 +300,14 @@
             <div class="section6__wrapper">
                 <div class="section1__first">
                     <h3 class="section6__h3">We realize your wildest fantasies</h3>
+
+                    <!-- вставка слайдера -->
+                    <div class="section6__slider">
+                        <img class="slider__img" src="assets/images/section6__img_big.jpg" alt="foto">
+                    </div>
+
+
+
                     <ul class="section6__list">
                         <li class="section6__item"><span class="section6__item_first">American classic</span></li>
                         <li class="section6__item">Empire</li>
@@ -285,6 +323,16 @@
                     </ul>
                 </div>
 
+                <div class="section6__picture-panel">
+                    <img class="section6__img section6__img_1" height="557" width="354"
+                        src="assets/images/section6-1.jpg" alt="section6-1">
+                    <img class="section6__img section6__img_2" height="349" width="354"
+                        src="assets/images/section6-2.jpg" alt="section6-2">
+                    <img class="section6__img section6__img_3" height="275" width="354"
+                        src="assets/images/section6-3.jpg" alt="section6-3">
+                    <img class="section6__img section6__img_4" height="624" width="354"
+                        src="assets/images/section6-4.jpg" alt="section6-4">
+                </div>
 
             </div>
 
@@ -357,28 +405,215 @@
 
         </section>
 
+        <!-------------------------------------------------- section8 -->
+
         <div class="section8">
 
         </div>
 
+        <!-------------------------------------------------- section9-team -->
+
         <section class="section9-team">
-            <h3>Our team</h3>
+            <h3 class="section9-team__h3">Our team</h3>
+            <img class="section9-team__imglogo" src="assets/images/section-team_img.svg" alt="imglogo">
+            <p class="section9-team__subtitle">Our team has helped to become happier for more than
+                500 families and we are not going to stop</p>
+
+
+            <div class="section9-team-card-wripper">
+                <div class="card section9-team-card">
+                    <img src="assets/images/idea.svg" alt="idea" class="section9-team-icon">
+                    <img class="card__img" src="assets/images/section9-team-card1.jpg" alt="card1">
+                    <div class="card__text section9-team-card__text">
+                        <p class="card__title section9-team-card__title">Dmitry Tulyakov</p>
+                        <ul class="card__info section9-team-card__info">
+                            <li class="section9-card__item">Project manager</li>
+                        </ul>
+                    </div>
+                    <p class="card__price section9-team-card__price">Work experience 8 years</p>
+                </div>
+
+                <div class="card section9-team-card">
+                    <img src="assets/images/rectangle.svg" alt="rectangle" class="section9-team-icon">
+                    <img class="card__img" src="assets/images/section9-team-card2.jpg" alt="card2">
+                    <div class="card__text section9-team-card__text">
+                        <p class="card__title section9-team-card__title">Larisa Kotlyarova</p>
+                        <ul class="card__info section9-team-card__info">
+                            <li class="section9-card__item">Designer</li>
+                        </ul>
+                    </div>
+                    <p class="card__price section9-team-card__price">Work experience 6 years</p>
+                </div>
+
+
+                <div class="card section9-team-card">
+                    <img src="assets/images/bag.svg" alt="bag" class="section9-team-icon">
+                    <img class="card__img" src="assets/images/section9-team-card3.jpg" alt="card3">
+                    <div class="card__text section9-team-card__text">
+                        <p class="card__title section9-team-card__title">Alexey Efimov</p>
+                        <ul class="card__info section9-team-card__info">
+                            <li class="section9-card__item">Foreman</li>
+                        </ul>
+                    </div>
+                    <p class="card__price section9-team-card__price">Work experience 12 years</p>
+                </div>
+
+            </div>
+
+            <p class="section9-team__under-cards">Each employee of our company is a qualified
+                full-time specialist with work experience of 6 years. <br>
+                We do not have laborers and guest workers, each employee carries
+                out work corresponding to his specialty.</p>
+
+
+
+
+
+
+
+
+
+            <!-- !----------------- -->
+
+
         </section>
 
-        <section class="section10-clients">
-            <h3>Our clients</h3>
+        <section class="section10">
+
+            <h3 class="section7__h3">Our clients</h3>
+            <img class="section7__imglogo" src="assets/images/section-clients_img.svg" alt="imglogo">
+            <p class="section7__subtitle">80% of our customers recommend us to their<br>
+                friends and family.</p>
+            <div class="section10-card-wripper">
+                <div class="card section10-card">
+                    <!-- <img class="card__img" src="assets/images/section7-card1.jpg" alt="card1"> -->
+                    <div class="card__text section10-card__text">
+
+                        <div class="foto-conteiner">
+                            <img src="assets/images/konstantinovna.png" alt="konstantinovna">
+                            <p class="card__title">Fedosova Maria <br>
+                                Konstantinovna</p>
+                        </div>
+
+                        <ul class="card__info section10-card__info">
+                            <li class="section10__li">I want to thank the guys for their work.
+                                we put your shower part in repair. I am
+                                very grateful that I referred to the repair as to my own.
+                                great thanks I express the project to georgia for its
+                                professionalism and approach.the repair process was turned out in terms,
+                                faster than anticipated. Team mobile and professional. Works
+                                performed qualitatively without comments. Quality satisfied.
+                                prices democratic. I recommend these masters.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p class="card__price section10-card__price">40 M2 | 48 DAYS</p>
+                </div>
+
+                <div class="card section10-card">
+                    <!-- <img class="card__img" src="assets/images/section7-card2.jpg" alt="card2"> -->
+                    <div class="card__text section10-card__text">
+                        <div class="foto-conteiner">
+                            <img src="assets/images/aleksandrovich.png" alt="aleksandrovich">
+                            <p class="card__title card__title_first">Afanasyev Sergey <br> Alexandrovich</p>
+                        </div>
+                        <ul class="card__info section10-card__info">
+
+                            <li class="section10__li">I want to thank the guys for their work.
+                                we put your shower part in repair. I am
+                                very grateful that I referred to the repair as to my own.
+                                great thanks I express the project to georgia for its
+                                professionalism and approach.the repair process was turned out in terms,
+                                faster than anticipated. Team mobile and professional. Works
+                                performed qualitatively without comments. Quality satisfied.
+                                prices democratic. I recommend these masters.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <p class="card__price section10-card__price">90 M2 | 128 DAYS</p>
+                </div>
+
+
+                <div class="card section10-card">
+                    <!-- <img class="card__img" src="assets/images/section7-card3.jpg" alt="card3"> -->
+                    <div class="card__text section10-card__text">
+
+                        <div class="foto-conteiner">
+                            <img src="assets/images/leonidovich.png" alt="leonidovich">
+
+                            <p class="card__title">Kiriev Egor <br> Leonidovich</p>
+                        </div>
+                        <ul class="card__info section10-card__info">
+                            <li class="section10__li">I want to thank the guys for their work.
+                                we put your shower part in repair. I am
+                                very grateful that I referred to the repair as to my own.
+                                great thanks I express the project to georgia for its
+                                professionalism and approach.the repair process was turned out in terms,
+                                faster than anticipated. Team mobile and professional. Works
+                                performed qualitatively without comments. Quality satisfied.
+                                prices democratic. I recommend these masters.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p class="card__price section10-card__price">56 M2 | 86 DAYS</p>
+                </div>
+
+            </div>
+
+
         </section>
 
-        <section class="questions">
-            <h3>have any questions?</h3>
-        </section>
+
+        <div class="questions-form-wripper">
+            <form class="form questions-form">
+                <h3 class="form__h3 questions-form__h3">have any questions?</h3>
+                <ul class="form__ul">
+                    <li class="form__li">
+                        <label class="form__lable" for="name">Name</label>
+                        <input class="form__input" type="text" name="name" placeholder="What is your name:"
+                            maxlength="100">
+                    </li>
+
+                    <li class="form__li ">
+                        <label class="form__lable" for="tel">Phone</label>
+                        <input class="form__input" type="tel" name="tel" maxlength="100"
+                            placeholder="Your phone number:">
+                    </li>
+
+                    <li class="form__li">
+                        <label class="form__lable" for="email">Question</label>
+                        <input class="form__input" type="email" name="email" maxlength="100"
+                            placeholder="I whant to know:">
+                    </li>
+
+                    <li class="form__li form__li_checkbox questions-form__li_checkbox">
+                        <label class="form__lable">
+                            <input class="form__input_checkbox" type="checkbox"> I agree to the processing of
+                            personal data
+                        </label>
+                    </li>
+
+                    <input class="questions-form__btn" type="submit" value="Submit">
+
+                </ul>
+            </form>
+        </div>
 
         <section class="map">
             <h3 class="map__h3">Rostov-on-Don, Nansen St., 239 Shopping Center
-                Decorum Tel +7 (928) 768 32 29</h3>
+                Decorum Tel <a class="map__tel" href="tel:+79287683239">+7 (928) 768 32 29</a></h3>
             <div class="map__links">
-                <a href="#" class="map__contacts"><img src="assets/images/section-map_letter.png" alt="email"></a>
-                <a href="#" class="map__contacts"><img src="assets/images/section-map_insta.png" alt="insta"></a>
+
+                <a href="#" class="map__contacts">
+                    <img class="map__social" src="assets/images/section-map-letter.png" alt="email">
+                </a>
+                <a href="#" class="map__contacts">
+                    <img class="map__social" src="assets/images/section-map-insta.png" alt="insta">
+                </a>
+
             </div>
             <div class="map__mapimg-wrap">
                 <img class="map__mapimg" src="assets/images/map.jpg" alt="map">
@@ -386,17 +621,18 @@
         </section>
 
         <footer class="header-footer__footer">
-            <div class="header-footer__logo">IC "Repair Design Project" </div>
+            <div class="header-footer__logo" id="down"> IC "Repair Design Project" </div>
             <div class="navbar">
                 <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link_first" href="#">Home</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Measurement</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Reviewers</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
                 </ul>
             </div>
-            <div class="header-footer__phone">+7(928)768-32-39</div>
+            <div class="header-footer__phone"><a class="header-footer__phone"
+                    href="tel:+79287683239">+7(928)768-32-39</a></div>
             <div class="btn__header">Reqest call</div>
         </footer>
 

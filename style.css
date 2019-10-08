@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("assets/fonts/ProximaNova-Regular.eot");
+  src: url("assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("assets/fonts/ProximaNova-Regular.woff") format("woff"), url("assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("assets/fonts/FuturaBookC.eot");
+  src: url("assets/fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FuturaBookC.woff2") format("woff2"), url("assets/fonts/FuturaBookC.woff") format("woff"), url("assets/fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("assets/fonts/FuturaDemiC.eot");
+  src: url("assets/fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FuturaDemiC.woff2") format("woff2"), url("assets/fonts/FuturaDemiC.woff") format("woff"), url("assets/fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("assets/fonts/FuturaMediumC.eot");
+  src: url("assets/fonts/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("assets/fonts/FuturaMediumC.woff2") format("woff2"), url("assets/fonts/FuturaMediumC.woff") format("woff"), url("assets/fonts/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("assets/fonts/YesevaOne.eot");
+  src: url("assets/fonts/YesevaOne.eot?#iefix") format("embedded-opentype"), url("assets/fonts/YesevaOne.woff2") format("woff2"), url("assets/fonts/YesevaOne.woff") format("woff"), url("assets/fonts/YesevaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +150,7 @@ html {
   background: #e9e6e6;
 }
 
-.section5_btn, .header-footer .btn__header, .header-footer__footer .btn__header, .section1 .section1-wrapper .section1-first .btn__section1, .section1 .section1-wrapper .section1-first .btn__section1_opasity, .section3 .section3-form .section3-form__btn {
+.section5_btn, .header-footer .btn__header, .header-footer__footer .btn__header, .section1 .section1-wrapper .section1-first .btn__section1, .section1 .section1-wrapper .section1-first .btn__section1_opasity, .section3 .section3-form .section3-form__btn, .questions-form .questions-form__btn {
   width: 200px;
   height: 51px;
   background: #e3b873;
@@ -128,8 +168,49 @@ html {
   transition: 0.5s linear;
 }
 
-.section5_btn:hover, .header-footer .btn__header:hover, .header-footer__footer .btn__header:hover, .section1 .section1-wrapper .section1-first .btn__section1:hover, .section1 .section1-wrapper .section1-first .btn__section1_opasity:hover, .section3 .section3-form .section3-form__btn:hover {
+.section5_btn:hover, .header-footer .btn__header:hover, .header-footer__footer .btn__header:hover, .section1 .section1-wrapper .section1-first .btn__section1:hover, .section1 .section1-wrapper .section1-first .btn__section1_opasity:hover, .section3 .section3-form .section3-form__btn:hover, .questions-form .questions-form__btn:hover {
   background: #776244;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 247px;
+  height: 97px;
+  background: #131313;
+  color: white;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
+}
+
+.scroll:hover {
+  background: #776244;
+}
+
+.scroll__text {
+  font-family: "Yeseva One";
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 /* =================================================== header */
@@ -154,6 +235,10 @@ html {
 
 .header-footer__logo {
   color: #e3b873;
+}
+
+.header-footer .h1, .header-footer__footer .h1 {
+  font-size: 1.4rem;
 }
 
 .header-footer .navbar, .header-footer__footer .navbar {
@@ -190,6 +275,10 @@ html {
 .header-footer .navbar .menu__link:hover, .header-footer__footer .navbar .menu__link:hover {
   color: #e3b873;
   text-decoration: underline;
+}
+
+.header-footer .navbar .menu__link_first, .header-footer__footer .navbar .menu__link_first {
+  color: #e3b873;
 }
 
 .header-footer__phone {
@@ -257,7 +346,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 5.7%;
+  width: 6%;
   text-align: center;
 }
 
@@ -278,6 +367,11 @@ html {
   .section1 .aside-social {
     display: none;
   }
+}
+
+.section1 .aside-social__link {
+  text-decoration: none;
+  color: #e3b873;
 }
 
 .section1 .section1-wrapper {
@@ -307,8 +401,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 510px;
-  padding: 60px;
+  max-width: 520px;
+  padding: 50px 0 50px 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -317,7 +411,7 @@ html {
   }
 }
 
-.section1 .section1-wrapper .section1-first .h1 {
+.section1 .section1-wrapper .section1-first .h2 {
   font-family: "Yeseva One", serif;
   font-weight: normal;
   font-size: 4rem;
@@ -325,18 +419,18 @@ html {
   text-transform: uppercase;
 }
 
-.section1 .section1-wrapper .section1-first .h1 .h1_other-color {
+.section1 .section1-wrapper .section1-first .h2 .h1_other-color {
   color: #e3b873;
 }
 
 @media only screen and (max-width: 768px) {
-  .section1 .section1-wrapper .section1-first .h1 {
+  .section1 .section1-wrapper .section1-first .h2 {
     font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .section1 .section1-wrapper .section1-first .h1 {
+  .section1 .section1-wrapper .section1-first .h2 {
     font-size: 2.3rem;
   }
 }
@@ -575,6 +669,10 @@ html {
 
 .section2 .section2-right .section2-right__examples .section2-right__text:hover {
   color: #e3b873;
+}
+
+.section2 .section2-right .section2-right__examples .section2-right__text_first {
+  color: #e3b873;
   border-bottom: 1px solid #e3b873;
 }
 
@@ -641,11 +739,17 @@ html {
 
 .section3 .section3__h3 {
   margin: 0;
-  padding: 65px 0 72px;
+  padding: 65px 0 0;
   font-size: 2rem;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Yeseva One", serif;
+}
+
+.section3 .section3__imglogo {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 15px 25px 15px;
 }
 
 .section3 .section3__text {
@@ -661,6 +765,7 @@ html {
   .section3 .section3__text {
     padding: 5% 5%;
     font-size: 1.4rem;
+    color: #ffffff;
   }
 }
 
@@ -723,7 +828,19 @@ html {
         -ms-flex-order: 1;
             order: 1;
     width: 90%;
-    margin: 0 0 -5% 0;
+    margin: 0 0 -3.5% 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section3 .section3-form .section3-form__btn {
+    margin: 0 0 -6% 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section3 .section3-form .section3-form__btn {
+    margin: 0 0 -7% 0;
   }
 }
 
@@ -746,10 +863,16 @@ html {
 /* ================================================ section4 */
 .section4 {
   height: auto;
-  padding: 0 0 15% 0;
+  padding: 0 0 4% 0;
   background: #e9e8e8;
   font-family: "Yeseva One", serif;
   background: #ffffff;
+}
+
+@media only screen and (max-width: 1430px) {
+  .section4 {
+    padding: 0 0 0 0;
+  }
 }
 
 .section4__h3 {
@@ -758,7 +881,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 40px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 .section4__imglogo {
@@ -848,34 +971,201 @@ html {
   }
 }
 
+@media only screen and (max-width: 1430px) {
+  .section4-card-wripper .section4__card {
+    padding: 15px 15px 2% 15px;
+  }
+}
+
 /* ================================================ end section4 */
 /* ================================================ section5 */
 .section5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 900px;
   max-height: 900px;
   background: #ffffff;
 }
 
-.section5 .section5-bild-circle {
-  background: url("assets/images/bild_circle.png") no-repeat;
-  height: 100%;
-  width: 60%;
-}
-
-.section5 .section5-right {
-  width: 35%;
+@media only screen and (max-width: 1430px) {
+  .section5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .section5 {
     display: none;
   }
+}
+
+.section5 .section5-bild-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("assets/images/bild_circle.png") no-repeat;
+  height: 100%;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1430px) {
+  .section5 .section5-bild-circle {
+    display: none;
+  }
+}
+
+.section5 .circle-conteiner {
+  width: 730px;
+  height: 550px;
+}
+
+.section5-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 290px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: FuturaMediumC;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #363636;
+}
+
+.section5-list__item {
+  list-style-type: none;
+  padding: 0 0 0 35px;
+}
+
+.section5-list__item_first {
+  position: absolute;
+  top: 44px;
+  left: 327px;
+}
+
+.section5-list__item_first:before {
+  position: absolute;
+  left: -16px;
+  top: 8px;
+  content: "01";
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.section5-list__item_second {
+  position: absolute;
+  top: 166px;
+  left: 402px;
+}
+
+.section5-list__item_second:before {
+  position: absolute;
+  left: -17px;
+  top: -3px;
+  content: "02";
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.section5-list__item_third {
+  position: absolute;
+  top: 325px;
+  left: 428px;
+}
+
+.section5-list__item_third:before {
+  position: absolute;
+  left: -18px;
+  top: -2px;
+  content: "03";
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.section5-list__item_fouth {
+  position: absolute;
+  top: 476px;
+  left: 365px;
+}
+
+.section5-list__item_fouth:before {
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  content: "04";
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.section5-right {
+  width: 35%;
+}
+
+@media only screen and (max-width: 1430px) {
+  .section5-right {
+    width: 60%;
+  }
+}
+
+.section5-form {
+  margin-bottom: 30px;
+}
+
+.section5__save-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 2rem;
+  color: #e3b873;
+}
+
+.section5__save-cost-text {
+  width: 50%;
+  padding: 0 10px;
 }
 
 /* ================================================ end section5 */
@@ -888,21 +1178,54 @@ html {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .section6 {
+    height: auto;
+  }
+}
+
 .section6 .section6__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("assets/images/section6-background.jpg");
+  background: url("assets/images/section6-background.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+  .section6 .section6__wrapper {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, white), color-stop(35%, black), to(black));
+    background: linear-gradient(to bottom, white 65%, black 35%, black 100%);
+  }
 }
 
 .section6 .section1__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   max-width: 510px;
+  width: 40%;
   margin: 0 0 0 7%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section6 .section1__first {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+  }
 }
 
 .section6 .section1__first .section6__h3 {
@@ -915,8 +1238,40 @@ html {
   color: #e3b873;
 }
 
+@media only screen and (max-width: 768px) {
+  .section6 .section1__first .section6__h3 {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.section6 .section1__first .section6__slider {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .section6 .section1__first .section6__slider {
+    display: block;
+    width: 100%;
+  }
+  .section6 .section1__first .slider__img {
+    width: 100%;
+  }
+}
+
 .section6 .section1__first .section6__list {
   padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section6 .section1__first .section6__list {
+    display: none;
+  }
 }
 
 .section6 .section1__first .section6__item {
@@ -932,11 +1287,63 @@ html {
   border-bottom: 1px solid #e3b873;
 }
 
+.section6__picture-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: 0px 0 -40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section6__picture-panel {
+    display: none;
+  }
+}
+
+.section6__img {
+  margin: 20px;
+}
+
+.section6__img_1 {
+  margin: -50px 0 0 0;
+}
+
+.section6__img_2 {
+  margin: 40px 0 0px 0;
+}
+
+.section6__img_3 {
+  margin: -100px 18px 33px 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .section6__img_3 {
+    display: none;
+  }
+}
+
+.section6__img_4 {
+  margin: 0 0 0 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .section6__img_4 {
+    display: none;
+  }
+}
+
 /* ================================================ end section6 */
 /* ================================================ section7 */
 .section7 {
   height: auto;
-  padding: 0 0 15% 0;
+  padding: 5% 0 15% 0;
   background: #e9e8e8;
   font-family: "Yeseva One", serif;
   background: #ffffff;
@@ -996,7 +1403,7 @@ html {
   width: 88.6%;
 }
 
-.section7-card-wripper .card {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,13 +1415,12 @@ html {
   padding: 15px 15px 10% 15px;
 }
 
-.section7-card-wripper .card__img {
+.card__img {
   width: 100%;
   height: auto;
-  max-width: 392px;
 }
 
-.section7-card-wripper .card .card__text {
+.card .card__text {
   margin: -42% 0 0 0;
   padding-bottom: 10%;
   background: #ffffff;
@@ -1025,13 +1431,13 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  .section7-card-wripper .card .card__text {
+  .card .card__text {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
 }
 
-.section7-card-wripper .card .card__title {
+.card .card__title {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.5rem;
@@ -1039,14 +1445,14 @@ html {
   color: #000000;
 }
 
-.section7-card-wripper .card .card__info {
+.card .card__info {
   font-family: "FuturaBookC", sans-serif;
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #959595;
 }
 
-.section7-card-wripper .card .card__price {
+.card .card__price {
   margin: -7% 7.5% 0 7.5%;
   background: #e3b873;
   width: 65%;
@@ -1055,12 +1461,13 @@ html {
   font-weight: normal;
   font-size: 1.8rem;
   line-height: 54px;
+  font-family: "Yeseva One", serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  .section7-card-wripper .card .card__price {
+  .card .card__price {
     margin: -7% 0 0 0%;
   }
 }
@@ -1068,55 +1475,353 @@ html {
 /* ================================================ end section7 */
 /* ================================================ section8 */
 .section8 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 864px;
-  max-height: 100vh;
   font-size: 3rem;
   background: #131313;
+}
+
+@media only screen and (max-width: 768px) {
+  .section8 {
+    display: none;
+  }
 }
 
 /* ================================================ end section8 */
 /* ============================================== section9-team */
 .section9-team {
+  height: auto;
+  font-size: 3rem;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team {
+    background: #131313;
+  }
+}
+
+.section9-team__h3 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team__h3 {
+    color: #ffffff;
+  }
+}
+
+.section9-team__imglogo {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.section9-team__subtitle {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 450px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team__subtitle {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+}
+
+.section9-team-card-wripper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 864px;
-  max-height: 100vh;
-  font-size: 3rem;
-  background: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.section9-team .section9-team-card {
+  position: relative;
+  max-height: 395px;
+  padding: 15px 20px 55px 20px;
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team .section9-team-card {
+    padding: 15px 60px 55px 60px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section9-team .section9-team-card {
+    padding: 15px 18px 55px 18px;
+  }
+}
+
+.section9-team .section9-team-icon {
+  position: absolute;
+  top: -33px;
+  left: -31px;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team .section9-team-icon {
+    top: -33px;
+    left: 8px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section9-team .section9-team-icon {
+    top: -33px;
+    left: -34px;
+  }
+}
+
+.section9-team .section9-team-card__title {
+  text-align: center;
+}
+
+.section9-team .section9-team-card__info {
+  padding: 0;
+}
+
+.section9-team .section9-card__item {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.section9-team .section9-team-card__text {
+  width: 85%;
+  margin: -30% 0 0 0;
+  padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team .section9-team-card__text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.section9-team .section9-team-card__price {
+  margin: 0 7.5% 0 7.5%;
+  font-family: "Yeseva One", serif;
+  width: 85%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.section9-team__under-cards {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 565px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section9-team__under-cards {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5rem;
+    display: none;
+  }
 }
 
 /* ============================================= end section9-team */
-/* ============================================= section9-clients */
-.section10-clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 864px;
-  max-height: 100vh;
+/* ============================================= section10 */
+.section10 {
+  height: auto;
   font-size: 3rem;
   background: #ffffff;
+  padding: 0 0 237px 0;
 }
 
-/* ============================================= end section9-clients*/
-/* ============================================= qestions */
-.questions {
+@media only screen and (max-width: 1024px) {
+  .section10 {
+    display: none;
+  }
+}
+
+.section10 .section10-card-wripper {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 864px;
-  max-height: 100vh;
-  font-size: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 88.6%;
+}
+
+.section10 .section10-card {
+  width: 415px;
+  padding: 15px 0px 10% 0px;
+}
+
+.section10 .foto-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section10-card__info {
+  padding: 0;
+}
+
+.section10 .section10-card__text {
+  margin: 0;
+}
+
+.section10 .section10-card__price {
+  margin: 0% 7.5% 0px 4.5%;
+}
+
+.section10 .section10__li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+/* ============================================= end section10*/
+/* ============================================= qestions */
+.questions-form-wripper {
+  margin: 0px 0 50px 0;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .questions-form-wripper {
+    margin-bottom: 0;
+    background: #131313;
+  }
+}
+
+.questions-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 3;
   background: #131313;
-  color: #ffffff;
+  margin-top: -233px;
+  width: 520px;
+  height: 445px;
+  padding: 20px 180px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media only screen and (max-width: 1024px) {
+  .questions-form {
+    margin-top: 0px;
+    width: 500px;
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .questions-form {
+    width: 380px;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .questions-form {
+    width: 300px;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .questions-form {
+    width: 300px;
+    padding: 5px 5px;
+  }
+}
+
+.questions-form .questions-form__h3 {
+  text-transform: uppercase;
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions-form .questions-form__h3 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.questions-form__li_checkbox {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.questions-form .questions-form__li_checkbox {
+  width: 260px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions-form .questions-form__li_checkbox {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.questions-form .questions-form__btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions-form .questions-form__btn {
+    width: 100%;
+  }
 }
 
 /* ============================================= end qestions*/
 /* ============================================= map */
 .map {
+  z-index: 2;
+  margin: -300px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1131,10 +1836,16 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background: url("assets/images/section_map_building.png");
-  height: auto;
-  max-height: 100vh;
+  height: 950px;
   font-size: 3rem;
   color: #e3b873;
+}
+
+@media only screen and (max-width: 1024px) {
+  .map {
+    margin: 0 0 0 0;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1171,12 +1882,46 @@ html {
   }
 }
 
+.map__tel {
+  font-family: "Yeseva One", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .map__tel {
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .map__links {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     padding: 7%;
+  }
+}
+
+.map .map__contacts {
+  text-decoration: none;
+}
+
+.map .map__social {
+  width: 28px;
+  height: 28px;
+}
+
+@media only screen and (max-width: 375px) {
+  .map .map__social {
+    width: 39px;
+    height: 39px;
   }
 }
 
