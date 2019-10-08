@@ -450,6 +450,7 @@ html {
     }
 
     .section2-right__slider {
+      position: relative;
       width: 80%;
 
       @media only screen and (max-width: 768px) {
@@ -458,6 +459,28 @@ html {
 
       .section2-right__img {
         width: 100%;
+      }
+    }
+
+    .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 3%;
+      transition: 0.5s linear;
+
+      &:hover {
+        filter: brightness(30%);
+      }
+    }
+    
+    .arrow-right {
+      position: absolute;
+      top: 45%;
+      right: 3%;
+      transition: 0.5s linear;
+
+      &:hover {
+        filter: brightness(30%);
       }
     }
   }
@@ -878,7 +901,6 @@ html {
 
   @media only screen and (max-width: 768px) {
     height: auto;
-   
   }
 
   .section6__wrapper {
@@ -888,22 +910,19 @@ html {
     background: url("assets/images/section6-background.jpg");
 
     @media only screen and (max-width: 768px) {
-      
       display: block;
-      background: linear-gradient(to bottom, rgba(255,255,255,1) 65%,
-      rgba(0,0,0,1) 35%,rgba(0,0,0,1) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 65%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 1) 100%);
     }
   }
   .section1__first {
     display: flex;
     flex-direction: column;
 
-    // 
+    //
     align-self: center;
     max-width: 510px;
     width: 40%;
     margin: 0 0 0 7%;
-   
 
     @media only screen and (max-width: 768px) {
       justify-content: center;
@@ -922,13 +941,11 @@ html {
       line-height: 3.7rem;
       color: $maincolor;
 
-      
-    @media only screen and (max-width: 768px) {
-      width: 100%;
-      justify-content: center;
-      align-self: center;
-    }
-
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+      }
     }
 
     //======================================================slider
@@ -937,16 +954,16 @@ html {
     }
 
     @media only screen and (max-width: 768px) {
-    .section6__slider {
-      display: block;
-      width: 100%;
-    }
+      .section6__slider {
+        display: block;
+        width: 100%;
+      }
 
-    .slider__img {
-      // max-width: 100vw;
-      width: 100%;
+      .slider__img {
+        // max-width: 100vw;
+        width: 100%;
+      }
     }
-  }
 
     .section6__list {
       padding: 0;

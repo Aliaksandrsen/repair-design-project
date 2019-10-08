@@ -677,6 +677,7 @@ html {
 }
 
 .section2 .section2-right .section2-right__slider {
+  position: relative;
   width: 80%;
 }
 
@@ -688,6 +689,32 @@ html {
 
 .section2 .section2-right .section2-right__slider .section2-right__img {
   width: 100%;
+}
+
+.section2 .section2-right .arrow-left {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.section2 .section2-right .arrow-left:hover {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.section2 .section2-right .arrow-right {
+  position: absolute;
+  top: 45%;
+  right: 3%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.section2 .section2-right .arrow-right:hover {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
 }
 
 /* ================================================ end section2 */
