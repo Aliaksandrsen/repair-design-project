@@ -296,11 +296,13 @@ html {
 /* ================================================ section2 */
 
 .section2 {
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 900px;
   //height: auto;
+  overflow: hidden; // прячем слайдер
   background: $blackcolor;
   color: white;
   font-family: "Yeseva One", serif;
@@ -451,14 +453,18 @@ html {
 
     .section2-right__slider {
       position: relative;
-      width: 80%;
+      // width: 80%;
+      width: 2000px;
+      overflow: hidden;
 
       @media only screen and (max-width: 768px) {
         width: 100%;
       }
 
       .section2-right__img {
-        width: 100%;
+        // width: 100%;
+        max-height: 482px;
+        margin-right: 15px;
       }
     }
 
@@ -501,7 +507,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center; // поменять
-    margin: -25% 0 0 0;
+    margin: -20% 0 0 0;
     max-width: 900px;
     align-items: center;
     // align-self: center;
