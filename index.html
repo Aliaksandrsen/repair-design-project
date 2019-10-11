@@ -13,8 +13,6 @@
 <body>
     <div class="container">
 
-
-
         <div class="scroll">
 
             <p class="scroll__text">Scroll down</p>
@@ -22,6 +20,7 @@
                 <img class="scroll__image" src="assets/images/down.png" alt="down">
             </a>
         </div>
+
         <!--------------------------------------------------- header -->
 
         <header class="header-footer">
@@ -47,7 +46,8 @@
         <section class="section1">
 
             <aside class="aside-social">
-                <p class="aside-social__inst"><a class="aside-social__link" href="#">INSTAGRAM</a></p>
+                <p class="aside-social__inst"><a class="aside-social__link"
+                        href="https://www.instagram.com">INSTAGRAM</a></p>
             </aside>
             <div class="section1-wrapper">
                 <div class="section1-first">
@@ -83,11 +83,6 @@
                 </p>
             </div>
 
-
-
-
-
-
             <div class="section2-left-bottom">
                 <div class="section2-left__info">
                     <div class="section2-left__item">
@@ -108,6 +103,15 @@
                         <p class="section2-left__text">Upon request</p>
                     </div>
                 </div>
+
+
+            </div>
+            <div class="section2-vector-panel">
+                <img class="vector left-vector" src="assets/images/right-vector.svg" alt="left">
+                <img class="little-circle little-circle__1" src="assets/images/little-circle.svg" alt="little-circle">
+                <img class="little-circle little-circle__2" src="assets/images/little-circle.svg" alt="little-circle">
+                <img class="little-circle little-circle__3" src="assets/images/little-circle.svg" alt="little-circle">
+                <img class="vector right-vector" src="assets/images/right-vector.svg" alt="right">
             </div>
 
 
@@ -120,25 +124,19 @@
                     <div class="section2-right__item"><span class="section2-right__text">Rostov-on-Don Patriotic</span>
                     </div>
                 </div>
-                <div class="section2-right__slider">
-                    <img class="section2-right__img" src="assets/images/section2-slider1.jpg" alt="picture1">
-                    <!-- <img src="" alt=""> -->
-                    <img class="section2-right__img" src="assets/images/section2-slider2.jpg" alt="picture2">
+                <div class="section2-right__slide-wriper">
                     <img class="arrow-left" src="assets/images/left.svg" alt="left">
                     <img class="arrow-right" src="assets/images/right.svg" alt="right">
+                    <div class="section2-right__slider">
+                        <img class="section2-right__img section2-right__img_1" src="assets/images/section2-slider1.jpg"
+                            alt="picture1">
+                        <img class="section2-right__img section2-right__img_2" src="assets/images/section2-slider2.jpg"
+                            alt="picture2">
+                    </div>
                 </div>
-
-            </div>
-
-
-            <div class="">
-
             </div>
 
         </section>
-
-
-
 
         <!-------------------------------------------------- section3 -->
 
@@ -148,10 +146,10 @@
                 <h3 class="section3__h3">online control</h3>
                 <img class="section3__imglogo" src="assets/images/section3_img.svg" alt="imglogo">
                 <div class="section3-video">
-                    <video class="video" src="" poster="assets/images/video_placeholder.jpg" controls>
-                        Ваш браузер не поддерживает видео!
-                    </video>
 
+                    <iframe class="iframe" src="https://www.youtube.com/embed/Er3b04ykexg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
 
                 </div>
 
@@ -162,13 +160,19 @@
                     Leave a request below and you will receive a link to the broadcast.</p>
 
                 <form class="section3-form" action="#">
-                    <input class="section3-form__input" type="text" placeholder="What is your name:">
-                    <input class="section3-form__input" type="tel" placeholder="Your phone number:">
+                    <label class="section3-form__lable" for="name">Name</label>
+                    <input class="section3-form__input" required pattern="^[a-zA-Z]+$" name="name" type="text"
+                        placeholder="What is your name:">
+                    <label class="section3-form__lable" for="email">Phone</label>
+                    <input class="section3-form__input" required name="tel" type="tel" placeholder="Your phone number:">
                     <input class="section3-form__btn" type="button" value="SUBMIT">
 
-                    <label class="section3-form__checkbox">
-                        <input type="checkbox"> I agree to the processing of personal data
-                    </label>
+                    <li class="section3-form__checkbox form__li form__li_checkbox orange-checkbox-container">
+                        <label class="form__lable section3-form__lable"> I agree to the processing of personal data
+                            <input class="form__input_checkbox" checked="checked" required type="checkbox">
+                            <span class="checkmark section3-checkmark "></span>
+                        </label>
+                    </li>
 
                 </form>
             </div>
@@ -214,7 +218,6 @@
                     <p class="card__price">from 900 rub / m2</p>
                 </div>
 
-
                 <div class="card section4__card">
                     <img class="card__img" src="assets/images/section4-card3.jpg" alt="card3">
                     <div class="card__text">
@@ -241,7 +244,11 @@
         <section class="section5">
 
             <div class="section5-bild-circle">
+
+                <div class="ellipse"></div>
+
                 <div class="circle-conteiner">
+
                     <ul class="section5-list">
                         <li class="section5-list__item section5-list__item_first">Our specialist will arrive
                             for measurements per day
@@ -260,26 +267,26 @@
                     <ul class="form__ul">
                         <li class="form__li">
                             <label class="form__lable" for="name">Name</label>
-                            <input class="form__input" type="text" name="name" placeholder="What is your name:"
-                                maxlength="100">
+                            <input class="form__input" required pattern="^[a-zA-Z]+$" type="text" name="name"
+                                placeholder="What is your name:" maxlength="100">
                         </li>
 
                         <li class="form__li">
                             <label class="form__lable" for="tel">Phone</label>
-                            <input class="form__input" type="tel" name="tel" maxlength="100"
+                            <input class="form__input" required type="tel" name="tel" maxlength="100"
                                 placeholder="Your phone number:">
                         </li>
 
                         <li class="form__li">
                             <label class="form__lable" for="email">Email</label>
-                            <input class="form__input" type="email" name="email" maxlength="100"
+                            <input class="form__input" required type="email" name="email" maxlength="100"
                                 placeholder="Your email">
                         </li>
 
-                        <li class="form__li form__li_checkbox">
-                            <label class="form__lable">
-                                <input class="form__input_checkbox" type="checkbox"> I agree to the processing of
-                                personal data
+                        <li class="form__li form__li_checkbox orange-checkbox-container">
+                            <label class="form__lable"> I agree to the processing of personal data
+                                <input class="form__input_checkbox" checked="checked" required type="checkbox">
+                                <span class="checkmark"></span>
                             </label>
                         </li>
 
@@ -299,13 +306,17 @@
         </section>
 
         <!-------------------------------------------------- section6 -->
+
         <section class="section6">
             <div class="section6__wrapper">
                 <div class="section1__first">
                     <h3 class="section6__h3">We realize your wildest fantasies</h3>
 
-                    <!-- вставка слайдера -->
                     <div class="section6__slider">
+
+                        <img class="arrow-left" src="assets/images/left.svg" alt="left">
+                        <img class="arrow-right" src="assets/images/right.svg" alt="right">
+
                         <img class="slider__img" src="assets/images/section6__img_big.jpg" alt="foto">
                     </div>
 
@@ -350,7 +361,7 @@
                 of your apartment more modern,<br> but also significantly reduces the cost of
                 materials and reduces the time of repair work.</p>
             <div class="section7-card-wripper">
-                <div class="card">
+                <div class="card section7-card">
                     <img class="card__img" src="assets/images/section7-card1.jpg" alt="card1">
                     <div class="card__text">
                         <p class="card__title">Mini</p>
@@ -364,7 +375,7 @@
                     <p class="card__price">150 rub / m2</p>
                 </div>
 
-                <div class="card">
+                <div class="card section7-card">
                     <img class="card__img" src="assets/images/section7-card2.jpg" alt="card2">
                     <div class="card__text">
                         <p class="card__title">Standard</p>
@@ -382,7 +393,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card section7-card card section7-card_last">
                     <img class="card__img" src="assets/images/section7-card3.jpg" alt="card3">
                     <div class="card__text">
                         <p class="card__title">Full</p>
@@ -412,9 +423,103 @@
 
         <div class="section8">
 
+            <section class="section8">
+
+                <div class="section8-left-top">
+                    <p class="section8__upper-title">How we are working</p>
+                    <h3 class="section8__h3">6 steps to<br>the goal</h3>
+
+                    <p class="left-top__number">
+                        1/6
+                    </p>
+
+                    <h4 class="item__title">
+                        Departure for <br> measurements premises
+                    </h4>
+
+                    <p class="section8-left__text">
+                        After your call, we go to you to consult and measure
+                        the premises of your apartment. During our meeting,
+                        you can ask absolutely any number of questions.
+                        An appraiser-appraiser leaves to measure the room.<br><br>
+
+                        He will advise you on the issues of repair technology,
+                        apartment design, terms of repair of the apartment as a
+                        whole and its individual stages.
+                    </p>
+                </div>
+
+
+                <div class="section8-vector-panel">
+                    <img class="vector left-vector" src="assets/images/right-vector.svg" alt="left">
+                    <img class="little-circle little-circle__1" src="assets/images/little-circle.svg"
+                        alt="little-circle">
+                    <img class="little-circle little-circle__2" src="assets/images/little-circle.svg"
+                        alt="little-circle">
+                    <img class="little-circle little-circle__2" src="assets/images/little-circle.svg"
+                        alt="little-circle">
+                    <img class="little-circle little-circle__2" src="assets/images/little-circle.svg"
+                        alt="little-circle">
+                    <img class="little-circle little-circle__3" src="assets/images/little-circle.svg"
+                        alt="little-circle">
+                    <img class="vector right-vector" src="assets/images/right-vector.svg" alt="right">
+                </div>
+
+                <div class="section8-right">
+                    <div class="section8-right__examples section8-right__examples-first">
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number section8-right__number_first">01</span></p>
+                            <p class="section8-right__text section8-right__text_first">Departure to <br>
+                                room measurements</p>
+                        </div>
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number">02</span></p>
+                            <p class="section8-right__text">Compilation <br>
+                                estimates</p>
+                        </div>
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number">03</span></p>
+                            <p class="section8-right__text">Development <br>
+                                project design</p>
+                        </div>
+
+                    </div>
+
+                    <div class="section8-right__examples">
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number">04</span></p>
+                            <p class="section8-right__text">Purchasing Supplies</p>
+                        </div>
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number">05</span></p>
+                            <p class="section8-right__text">Repair finishing work</p>
+                        </div>
+
+                        <div class="section8-right__item">
+                            <p><span class="section8-right__number">06</span></p>
+                            <p class="section8-right__text">Приемка-сдача<br> работ</p>
+                        </div>
+
+                    </div>
+
+                    <div class="section8-right__slide-wriper">
+
+                        <img class="section8-right__img section8-right__img_1" src="assets/images/section-8.jpg"
+                            alt="picture1">
+
+                    </div>
+                </div>
+
+            </section>
+
         </div>
 
-        <!-------------------------------------------------- section9-team -->
+        <!--------------------------------------------- section9-team -->
 
         <section class="section9-team">
             <h3 class="section9-team__h3">Our team</h3>
@@ -468,18 +573,9 @@
                 We do not have laborers and guest workers, each employee carries
                 out work corresponding to his specialty.</p>
 
-
-
-
-
-
-
-
-
-            <!-- !----------------- -->
-
-
         </section>
+
+        <!------------------------------------------------- section10 -->
 
         <section class="section10">
 
@@ -489,7 +585,7 @@
                 friends and family.</p>
             <div class="section10-card-wripper">
                 <div class="card section10-card">
-                    <!-- <img class="card__img" src="assets/images/section7-card1.jpg" alt="card1"> -->
+                    
                     <div class="card__text section10-card__text">
 
                         <div class="foto-conteiner">
@@ -511,11 +607,16 @@
 
                         </ul>
                     </div>
-                    <p class="card__price section10-card__price">40 M2 | 48 DAYS</p>
+                    <p class="card__price section10-card__price">
+                        <img class="section10-card__price-icon2" src="assets/images/area.svg" alt="icon1">
+                        <span class="section10-card__price-icon1">40 M2</span>
+                        <img class="section10-card__price-icon2" src="assets/images/calendar.svg" alt="icon2">
+                        <span class="section10-card__price-icon2">48 DAYS</span>
+                    </p>
                 </div>
 
                 <div class="card section10-card">
-                    <!-- <img class="card__img" src="assets/images/section7-card2.jpg" alt="card2"> -->
+                    
                     <div class="card__text section10-card__text">
                         <div class="foto-conteiner">
                             <img src="assets/images/aleksandrovich.png" alt="aleksandrovich">
@@ -535,12 +636,17 @@
                         </ul>
 
                     </div>
-                    <p class="card__price section10-card__price">90 M2 | 128 DAYS</p>
+                    <p class="card__price section10-card__price">
+                        <img class="section10-card__price-icon2" src="assets/images/area.svg" alt="icon1">
+                        <span class="section10-card__price-icon1">80 M2</span>
+                        <img class="section10-card__price-icon2" src="assets/images/calendar.svg" alt="icon2">
+                        <span class="section10-card__price-icon2">128 DAYS</span>
+                    </p>
                 </div>
 
 
                 <div class="card section10-card">
-                    <!-- <img class="card__img" src="assets/images/section7-card3.jpg" alt="card3"> -->
+                    
                     <div class="card__text section10-card__text">
 
                         <div class="foto-conteiner">
@@ -561,14 +667,17 @@
 
                         </ul>
                     </div>
-                    <p class="card__price section10-card__price">56 M2 | 86 DAYS</p>
+                    <p class="card__price section10-card__price">
+                        <img class="section10-card__price-icon2" src="assets/images/area.svg" alt="icon1">
+                        <span class="section10-card__price-icon1">56 M2</span>
+                        <img class="section10-card__price-icon2" src="assets/images/calendar.svg" alt="icon2">
+                        <span class="section10-card__price-icon2">86 DAYS</span>
+                    </p>
                 </div>
 
             </div>
 
-
         </section>
-
 
         <div class="questions-form-wripper">
             <form class="form questions-form">
@@ -576,26 +685,26 @@
                 <ul class="form__ul">
                     <li class="form__li">
                         <label class="form__lable" for="name">Name</label>
-                        <input class="form__input" type="text" name="name" placeholder="What is your name:"
-                            maxlength="100">
+                        <input class="form__input" type="text" required pattern="^[a-zA-Z]+$" name="name"
+                            placeholder="What is your name:" maxlength="100">
                     </li>
 
                     <li class="form__li ">
                         <label class="form__lable" for="tel">Phone</label>
-                        <input class="form__input" type="tel" name="tel" maxlength="100"
+                        <input class="form__input" required type="tel" name="tel" maxlength="100"
                             placeholder="Your phone number:">
                     </li>
 
                     <li class="form__li">
-                        <label class="form__lable" for="email">Question</label>
-                        <input class="form__input" type="email" name="email" maxlength="100"
+                        <label class="form__lable" for="question">Question</label>
+                        <input class="form__input" type="text" required name="question" maxlength="100"
                             placeholder="I whant to know:">
                     </li>
 
-                    <li class="form__li form__li_checkbox questions-form__li_checkbox">
-                        <label class="form__lable">
-                            <input class="form__input_checkbox" type="checkbox"> I agree to the processing of
-                            personal data
+                    <li class="form__li form__li_checkbox orange-checkbox-container">
+                        <label class="form__lable"> I agree to the processing of personal data
+                            <input class="form__input_checkbox" checked="checked" required type="checkbox">
+                            <span class="checkmark"></span>
                         </label>
                     </li>
 
@@ -605,6 +714,8 @@
             </form>
         </div>
 
+        <!------------------------------------------------------- map -->
+
         <section class="map">
             <h3 class="map__h3">Rostov-on-Don, Nansen St., 239 Shopping Center
                 Decorum Tel <a class="map__tel" href="tel:+79287683239">+7 (928) 768 32 29</a></h3>
@@ -613,7 +724,7 @@
                 <a href="#" class="map__contacts">
                     <img class="map__social" src="assets/images/section-map-letter.png" alt="email">
                 </a>
-                <a href="#" class="map__contacts">
+                <a href="https://www.instagram.com" class="map__contacts">
                     <img class="map__social" src="assets/images/section-map-insta.png" alt="insta">
                 </a>
 
@@ -622,6 +733,8 @@
                 <img class="map__mapimg" src="assets/images/map.jpg" alt="map">
             </div>
         </section>
+
+        <!---------------------------------------------------- footer -->
 
         <footer class="header-footer__footer">
             <div class="header-footer__logo" id="down"> IC "Repair Design Project" </div>
@@ -638,8 +751,6 @@
                     href="tel:+79287683239">+7(928)768-32-39</a></div>
             <div class="btn__header">Reqest call</div>
         </footer>
-
-
 
     </div>
 </body>
