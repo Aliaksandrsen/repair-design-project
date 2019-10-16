@@ -39,7 +39,7 @@ html {
   bottom: 0;
   z-index: 2;
 
-  // !! case когда не ездит
+  // ! case когда не ездит
   // position:absolute;
   // z-index:2;
   // bottom:0;
@@ -79,8 +79,8 @@ html {
 
 .header-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   background: $blackcolor;
   color: white;
@@ -106,7 +106,7 @@ html {
 
     .menu {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       padding: 0;
       margin: 0;
 
@@ -189,7 +189,6 @@ html {
 
   .aside-social {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     width: 6%;
     text-align: center;
@@ -300,7 +299,7 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
   height: 720px;
-  overflow: hidden; // прячем слайдер
+  overflow: hidden;
   background: $blackcolor;
   color: white;
   font-family: "Yeseva One", serif;
@@ -316,7 +315,7 @@ html {
     flex-direction: column;
 
     width: 30%;
-    padding: 118.4px 5.7% 0 5.7%; // зависит от левой части
+    padding: 118.4px 5.7% 0 5.7%;
 
     @media only screen and (max-width: 768px) {
       order: 1;
@@ -457,7 +456,6 @@ html {
 
     .section2-right__examples {
       display: flex;
-      // flex-basis: 80%;
       padding: 50px 0;
 
       @media only screen and (max-width: 768px) {
@@ -1232,7 +1230,7 @@ html {
     flex-wrap: wrap;
     width: 60%;
 
-    margin: 0px 0 -40px 0; //танцы с картинкам
+    margin: 0px 0 -40px 0;
 
     @media only screen and (max-width: 768px) {
       display: none;
@@ -1348,7 +1346,7 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
   height: 720px;
-  overflow: hidden; // прячем слайдер
+  overflow: hidden;
   background: $blackcolor;
   color: white;
   font-family: "Yeseva One", serif;
@@ -1364,7 +1362,7 @@ html {
     flex-direction: column;
 
     width: 30%;
-    padding: 0 5.7% 0 5.7%; // зависит от левой части
+    padding: 0 5.7% 0 5.7%;
 
     @media only screen and (max-width: 768px) {
       order: 1;
@@ -1938,7 +1936,6 @@ html {
 
   .questions-form__btn {
     @extend %btn;
-    // align-self: center;
     margin: 0 31%;
 
     @media only screen and (max-width: 768px) {

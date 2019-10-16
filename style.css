@@ -46,7 +46,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px auto;
+  margin: 50px auto auto;
   background: #131313;
   color: #ffffff;
   padding: 8%;
@@ -57,7 +57,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 2.0rem;
+  font-size: 2rem;
   max-width: 60%;
   line-height: 2.5rem;
   text-align: center;
@@ -79,8 +79,8 @@
 .form__li {
   display: block;
   width: 100%;
-  padding: 15px  0 0 0;
-  border-bottom: 1px solid #DDDDDD;
+  padding: 15px 0 0 0;
+  border-bottom: 1px solid #dddddd;
   margin: 20px 0;
 }
 
@@ -92,9 +92,9 @@
   display: block;
   float: left;
   margin-top: -19px;
-  background: #FFFFFF;
+  background: #ffffff;
   height: 14px;
-  color: #B9B9B9;
+  color: #b9b9b9;
   font-size: 1.5rem;
   background: #131313;
   font-family: "FuturaBookC", sans-serif;
@@ -304,12 +304,12 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #131313;
   color: white;
   height: 83px;
@@ -338,9 +338,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   margin: 0;
 }
