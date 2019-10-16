@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-
+        
         <div class="scroll">
 
             <p class="scroll__text">Scroll down</p>
@@ -27,7 +27,7 @@
             <div class="header-footer__logo">
                 <h1 class="h1">IC "Repair Design Project"</h1>
             </div>
-            <div class="navbar">
+            <nav class="navbar">
                 <ul class="menu">
                     <li class="menu__item"><a class="menu__link menu__link_first" href="#">Home</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Measurement</a></li>
@@ -35,7 +35,7 @@
                     <li class="menu__item"><a class="menu__link" href="#">Reviewers</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="header-footer__phone"> <a class="header-footer__phone"
                     href="tel:+79287683239">+7(928)768-32-39</a></div>
             <input class="btn__header" type="button" value="REQUEST CALL">
@@ -116,14 +116,17 @@
 
 
             <div class="section2-right">
-                <div class="section2-right__examples">
-                    <div class="section2-right__item"><span
-                            class="section2-right__text section2-right__text_first">Rostov-on-Don, Admiral</span>
+                <nav class="section2-right__examples">
+                    <div class="section2-right__item">
+                        <span class="section2-right__text section2-right__text_first">Rostov-on-Don, Admiral</span>
                     </div>
-                    <div class="section2-right__item"><span class="section2-right__text">Sochi Thieves</span></div>
-                    <div class="section2-right__item"><span class="section2-right__text">Rostov-on-Don Patriotic</span>
+                    <div class="section2-right__item">
+                        <span class="section2-right__text">Sochi Thieves</span>
                     </div>
-                </div>
+                    <div class="section2-right__item">
+                        <span class="section2-right__text">Rostov-on-Don Patriotic</span>
+                    </div>
+                </nav>
                 <div class="section2-right__slide-wriper">
                     <img class="arrow-left" src="assets/images/left.svg" alt="left">
                     <img class="arrow-right" src="assets/images/right.svg" alt="right">
@@ -161,11 +164,11 @@
 
                 <form class="section3-form" action="#">
                     <label class="section3-form__lable" for="name">Name</label>
-                    <input class="section3-form__input" required pattern="^[a-zA-Z]+$" name="name" type="text"
+                    <input class="section3-form__input" required pattern="^[a-zA-Z\s]+$" name="name" type="text"
                         placeholder="What is your name:">
-                    <label class="section3-form__lable" for="email">Phone</label>
-                    <input class="section3-form__input" required name="tel" type="tel" placeholder="Your phone number:">
-                    <input class="section3-form__btn" type="button" value="SUBMIT">
+                    <label class="section3-form__lable"  for="email">Phone</label>
+                    <input class="section3-form__input" required pattern="[0-9]{5,}" name="tel" type="tel" placeholder="Your phone number:">
+                    <input class="section3-form__btn" type="submit" value="SUBMIT">
 
                     <li class="section3-form__checkbox form__li form__li_checkbox orange-checkbox-container">
                         <label class="form__lable section3-form__lable"> I agree to the processing of personal data
@@ -267,13 +270,13 @@
                     <ul class="form__ul">
                         <li class="form__li">
                             <label class="form__lable" for="name">Name</label>
-                            <input class="form__input" required pattern="^[a-zA-Z]+$" type="text" name="name"
+                            <input class="form__input" required pattern="^[a-zA-Z\s]+$" type="text" name="name"
                                 placeholder="What is your name:" maxlength="100">
                         </li>
 
                         <li class="form__li">
                             <label class="form__lable" for="tel">Phone</label>
-                            <input class="form__input" required type="tel" name="tel" maxlength="100"
+                            <input class="form__input" required pattern="[0-9]{5,}" type="tel" name="tel" maxlength="100"
                                 placeholder="Your phone number:">
                         </li>
 
@@ -284,7 +287,7 @@
                         </li>
 
                         <li class="form__li form__li_checkbox orange-checkbox-container">
-                            <label class="form__lable"> I agree to the processing of personal data
+                            <label class="form__lable form__lable_checkbox"> I agree to the processing of personal data
                                 <input class="form__input_checkbox" checked="checked" required type="checkbox">
                                 <span class="checkmark"></span>
                             </label>
@@ -682,31 +685,31 @@
         <div class="questions-form-wripper">
             <form class="form questions-form">
                 <h3 class="form__h3 questions-form__h3">have any questions?</h3>
-                <ul class="form__ul">
-                    <li class="form__li">
+                <ul class="questions-form__ul form__ul">
+                    <li class="form__li form__li_first">
                         <label class="form__lable" for="name">Name</label>
-                        <input class="form__input" type="text" required pattern="^[a-zA-Z]+$" name="name"
+                        <input class="form__input" type="text" required pattern="^[a-zA-Z\s]+$" name="name"
                             placeholder="What is your name:" maxlength="100">
                     </li>
 
-                    <li class="form__li ">
+                    <li class="form__li form__li_second">
                         <label class="form__lable" for="tel">Phone</label>
-                        <input class="form__input" required type="tel" name="tel" maxlength="100"
+                        <input class="form__input" required pattern="[0-9]{5,}" type="tel" name="tel" maxlength="100"
                             placeholder="Your phone number:">
                     </li>
 
                     <li class="form__li">
                         <label class="form__lable" for="question">Question</label>
-                        <input class="form__input" type="text" required name="question" maxlength="100"
+                        <input class="form__input" pattern="[\x1F-\xBF]*" type="text" required name="question" maxlength="100"
                             placeholder="I whant to know:">
                     </li>
 
                     <li class="form__li form__li_checkbox orange-checkbox-container">
-                        <label class="form__lable"> I agree to the processing of personal data
+                        <label class="form__lable form__lable_checkbox"> I agree to the processing of personal data
                             <input class="form__input_checkbox" checked="checked" required type="checkbox">
                             <span class="checkmark"></span>
                         </label>
-                    </li>
+                    </li> <br>
 
                     <input class="questions-form__btn" type="submit" value="Submit">
 

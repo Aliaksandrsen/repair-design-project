@@ -95,9 +95,19 @@
   background: #FFFFFF;
   height: 14px;
   color: #B9B9B9;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   background: #131313;
   font-family: "FuturaBookC", sans-serif;
+}
+
+@media only screen and (max-width: 425px) {
+  .form__lable {
+    font-size: 1.5rem;
+  }
+}
+
+.form__lable_checkbox {
+  font-size: 1.6rem;
 }
 
 .form__input {
@@ -108,7 +118,7 @@
   border: none;
   height: 25px;
   line-height: 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 0;
   background: #131313;
   color: #ffffff;
@@ -151,7 +161,7 @@
   margin-bottom: 12px;
   height: 13px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -726,6 +736,14 @@ html {
           filter: brightness(30%);
 }
 
+.section2 .section2-vector-panel .little-circle:hover {
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
 .section2 .section2-vector-panel .little-circle__1 {
   -webkit-filter: none;
           filter: none;
@@ -1269,7 +1287,7 @@ html {
 }
 
 .card .card__price {
-  margin: -7% 7.5% 0 7.5%;
+  margin: -7% 7.5% 0 10%;
   background: #e3b873;
   width: 65%;
   height: 54px;
@@ -1284,7 +1302,7 @@ html {
 
 @media only screen and (max-width: 768px) {
   .card .card__price {
-    margin: -7% 0 0 0%;
+    margin: -9% 0 0 0%;
   }
 }
 
@@ -1377,7 +1395,7 @@ html {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  font-family: FuturaMediumC;
+  font-family: "FuturaMediumC";
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #363636;
@@ -2019,6 +2037,14 @@ html {
           filter: brightness(30%);
 }
 
+.section8 .section8-vector-panel .little-circle:hover {
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
 .section8 .section8-vector-panel .little-circle__1 {
   -webkit-filter: none;
           filter: none;
@@ -2226,7 +2252,7 @@ html {
 
 @media only screen and (max-width: 425px) {
   .section9-team .section9-team-card {
-    padding: 15px 18px 55px 18px;
+    padding: 15px 0px 55px 18px;
   }
 }
 
@@ -2246,7 +2272,7 @@ html {
 @media only screen and (max-width: 425px) {
   .section9-team .section9-team-icon {
     top: -33px;
-    left: -34px;
+    left: -33px;
   }
 }
 
@@ -2389,7 +2415,7 @@ html {
 /* ============================================= end section10*/
 /* ============================================= qestions */
 .questions-form-wripper {
-  margin: 0px 0 50px 0;
+  margin: 0px 0 30px 0;
   height: 100%;
 }
 
@@ -2409,7 +2435,7 @@ html {
   background: #131313;
   margin-top: -233px;
   width: 520px;
-  height: 445px;
+  height: 380px;
   padding: 20px 180px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -2420,6 +2446,7 @@ html {
   .questions-form {
     margin-top: 0px;
     width: 500px;
+    height: auto;
     padding: 20px 20px;
   }
 }
@@ -2463,34 +2490,74 @@ html {
   }
 }
 
-.questions-form__li_checkbox {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.questions-form .questions-form__ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.questions-form .questions-form__li_checkbox {
-  width: 260px;
+@media only screen and (max-width: 1024px) {
+  .questions-form .questions-form__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.questions-form .form__li_first {
+  width: 45%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .questions-form .form__li_first {
+    width: 100%;
+  }
+}
+
+.questions-form .form__li_second {
+  width: 45%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .questions-form .form__li_second {
+    width: 100%;
+  }
+}
+
+.questions-form .form__li_checkbox {
+  margin: 30px auto;
+}
+
+.questions-form .form__li_checkbox {
+  width: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 @media only screen and (max-width: 768px) {
-  .questions-form .questions-form__li_checkbox {
+  .questions-form .form__li_checkbox {
+    margin-left: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
 }
 
 .questions-form .questions-form__btn {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin: 0 31%;
 }
 
 @media only screen and (max-width: 768px) {
   .questions-form .questions-form__btn {
+    margin: 0;
+    padding-left: 0px;
     width: 100%;
   }
 }
@@ -2499,7 +2566,7 @@ html {
 /* ============================================= map */
 .map {
   z-index: 2;
-  margin: -300px 0 0 0;
+  margin: -255px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -45,11 +45,19 @@
 	background: #FFFFFF;
 	height: 14px;
 	color: #B9B9B9;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
     background: #131313;
     font-family: "FuturaBookC", sans-serif;
-    
+
+    @media only screen and (max-width: 425px) {
+      font-size: 1.5rem;
+    }
 }
+
+.form__lable_checkbox {
+  font-size: 1.6rem;
+}
+
 .form__input{
 	box-sizing: border-box;
 	
@@ -58,7 +66,7 @@
 	border: none;
 	height: 25px;
 	line-height: 2.5rem;
-	font-size: 1.6rem;
+	font-size: 1.8rem;       
     padding: 0;
     background: #131313;
     color: #ffffff;
@@ -85,7 +93,7 @@
     margin-bottom: 12px;
     height: 13px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1.6rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
